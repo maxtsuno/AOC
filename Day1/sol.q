@@ -1,3 +1,5 @@
 input:"J"$read0`:input.txt
-sum 0<1_deltas input / Part 1
-sum 0<1_deltas 2_3 msum input / Part 2
+f:{sum 0<1_deltas x} / Part 1
+/ f[input]
+g:{f 2_x msum y} / Part 2
+/ g[3;input]
